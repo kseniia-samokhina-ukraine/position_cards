@@ -193,17 +193,20 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: 175px 175px;  
-    grid-gap: 20px; 
+    grid-gap: 30px; 
     background-color: transparent;
-    perspective: 1000px;
-    margin: 20px;
+    padding: 0 20px 0 20px;
+    width: 100%;
+}
+
+.flip-card:hover {
+    cursor: pointer;
 }
 
 .flip-card-inner {
     position: relative;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flip-card-inner:active {
