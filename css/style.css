@@ -1,0 +1,223 @@
+@import url('../css/normalize.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;;
+    font-size: 28px;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+body {
+    background-image: url("../img/bg-picture.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right 120px;
+    background-size: auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    background: white;
+    z-index: 2;
+}
+
+.lang h4 {
+    font-family: "Tourney", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.nav {
+    flex-grow: 1;
+    padding-left: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.menu_items {
+    text-decoration: none;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.header_link {
+    color: #000;
+    text-decoration: none;
+}
+
+.slash::after {
+    content: '/';
+    margin: 0 5px 0 5px;
+}
+
+.logo {
+    max-width: 248px;
+    margin-right: 20vw;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.aside {
+    width: 30%;
+    height: 500px;
+    padding-top: 160px;
+    margin-bottom: 150px;
+    position: sticky;
+    top: 0;
+}
+
+.aside a {
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+}
+
+.title_main_aside {
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.title_main_aside::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #E6E6E6;
+}
+
+.main {
+    padding-top: 160px;
+    width: 65%;
+    margin-left: auto;
+}
+
+.title_main {
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.above_line::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 8px;
+    background: #000;
+    margin-bottom: 20px;
+    
+}
+
+.title_main_top_text {
+    font-family: "Farro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: capitalize;
+    vertical-align: 25px;
+    margin-left: 10px;
+}
+
+.title_par {
+    margin: 40px 0 70px 0;
+    line-height: 1.8;
+}
+
+.bold_pt_sans {
+    font-weight: 700;
+}
+
+.standart_par {
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.last_block {
+    padding-bottom: 90px;
+}
+
+.bg_text {
+    background: #DADADA;
+}
+
+.footer {
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.left_line::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 8px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    
+}
+
+.footer_title {
+    padding-left: 120px;
+    margin-bottom: 40px;    
+}
+
+
+.flip-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 175px 175px;  
+    grid-gap: 20px; 
+    background-color: transparent;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-inner:active {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans&family=Staatliches&family=Tourney:wdth@75..125&display=swap"
+        rel="stylesheet">
+    <title>HW_13_Fonts+Cards</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="lang">
+                <h4>ENG</h4>
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu_items slash">Documentation</li>
+                    <a href="#footer_title" class="header_link"><li class="menu_items">Who's using</li></a>
+                </ul>
+            </nav>
+            <div>
+                <a href="#" class="logo"><img src="./img/logo.svg" alt="LOGO"></a>
+            </div>
+        </header>
+        <div class="flex_container">
+            <aside class="aside">
+                <a href="#1_title">
+                    <h3 class="title_main title_main_aside">Introduction</h3>
+                </a>
+                <a href="#2_title">
+                    <h3 class="title_main title_main_aside">core components</h3>
+                </a>
+                <a href="#3_title">
+                    <h3 class="title_main title_main_aside">react fundamentals</h3>
+                </a>
+                <a href="#4_title">
+                    <h3 class="title_main title_main_aside">handling text input</h3>
+                </a>
+            </aside>
+            <main class="main">
+                <section>
+                    <h3 class="title_main above_line" id="1_title">Introduction <span
+                            class="title_main_top_text">Chapter 1</span></h3>
+                    <p class="title_par">Welcome to the very start of your React Native journey! If you're looking for
+                        environment setup instructions, they've moved
+                        to <u>their own section</u>. Continue reading for an introduction to the documentation, Native
+                        Components, React, and more!</p>
+                </section>
+                <section>
+                    <h3 class="title_main above_line" id="2_title">core components <span
+                            class="title_main_top_text">Chapter 2</span></h3>
+                    <p class="title_par">React Native is an open source framework for building Android and iOS
+                        applications using React and the app platform’s
+                        native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well
+                        as to describe the appearance and
+                        behavior of your UI using React components: <i>bundles of reusable, nestable code</i>. You can
+                        learn more about React in the next
+                        section. But first, let’s cover how components work in React Native.</p>
+                </section>
+                <section>
+                    <h3 class="title_main above_line" id="3_title">react fundamentals <span
+                            class="title_main_top_text">Chapter 3</span></h3>
+                    <p class="title_par standart_par">React Native runs on <u>React</u>, a popular open source library
+                        for building user interfaces with
+                        JavaScript. To make the most of React Native, it helps to understand React itself. This section
+                        can get you started or can serve as
+                        a refresher course.</p>
+                    <p class="standart_par">We’re going to cover the core concepts behind React:</p>
+                    <p class="standart_par"><span class="bold_pt_sans">+ components.</span> The rest of this
+                        introduction to React uses cats in its examples:
+                        friendly, approachable creatures that need names and a cafe to work in.</p>
+                    <p class="standart_par"><span class="bold_pt_sans">+ JSX</span>. React and React Native use JSX, a
+                        syntax that lets you write elements
+                        inside JavaScript like so:<span class="bg_text">&lt;Text&gt;Hello, I am your
+                            cat!&lt;/Text&gt;</span>.</p>
+                    <p class="standart_par">The React docs have <u>a comprehensive guide to JSX</u> you can refer to
+                        learn even more. Because JSX is JavaScript,
+                        you can use variables inside it. Here you are declaring a name for the cat, <span
+                            class="bg_text">name</span>, and embedding it with
+                        curly braces inside <span class="bg_text">&lt;Text&gt;</span></p>
+                    <p class="standart_par"> <span class="bold_pt_sans">+ props.</span> Props is short for “properties”.
+                    </p>
+                    <p class="standart_par"><span class="bold_pt_sans">+ props.</span> While you can think of props as
+                        arguments you use to configure how
+                        components render, state is like a component’s personal data storage. State is useful for
+                        handling data that changes over time or
+                        that comes from user interaction. State gives
+                        your components memory!</p>
+                </section>
+                <section class="last_block">
+                    <h3 class="title_main above_line" id="4_title">handling text input <span
+                            class="title_main_top_text">Chapter 4</span></h3>
+                    <p class="title_par standart_par">TextInput is a Core Component that allows the user to enter text.
+                        It has an <i>onChangeText</i> prop that takes a function to be called
+                        every time the text changed, and an onSubmitEditing prop that takes a function to be called when
+                        the text is submitted.</p>
+                    <p class="standart_par">For example, let's say that as the user types, you're translating their
+                        words into a different language. In this new language,
+                        every single word is written the same way: &#127829; So the sentence "Hello there Bob" would be
+                        translated as "&#127829; &#127829;".</p>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <h3 class="title_main left_line footer_title" id="footer_title">Who’s using</h3>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./img/1facebook.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/1_1facebook.png" alt="">
+                    </div>
+                </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./img/2instagram.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/2_2instagram.png" alt="">
+                    </div>
+                </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./img/3shopify.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/3_3shopify.png" alt="">
+                    </div>
+                </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./img/4skype.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/4_4skype.png" alt="">
+                    </div>
+                </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./img/5pinterest.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/5_5pinterest.png" alt="">
+                    </div>
+                </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./img/6wix.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/6_6wix.png" alt="">
+                    </div>
+                </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./img/7saleforse.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/7_7saleforse.png" alt="">
+                    </div>
+                </div>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./img/8soundcloud.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./img/8_8soundcloud.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
